@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{A0A0FA68-BE5C-489E-95F3-6CB5F73208EE}|Default">
+  <MonoDevelop.Ide.ItemProperties.HelloWorld AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.AVD2" AndroidDesignerPreferredTheme="Theme.AppCompat.Light.DarkActionBar" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld Status">
+    <Files>
+      <File FileName="HelloWorld/MainActivity.cs" Line="28" Column="6" />
+      <File FileName="HelloWorld Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
