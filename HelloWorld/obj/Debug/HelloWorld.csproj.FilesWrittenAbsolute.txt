@@ -17,3 +17,4 @@
 /Users/tylerbaker/Projects/HelloWorld/HelloWorld/obj/Debug/HelloWorld.dll.mdb
 /Users/tylerbaker/Projects/HelloWorld/HelloWorld/bin/Debug/Xamarin.Android.Support.v4.dll
 /Users/tylerbaker/Projects/HelloWorld/HelloWorld/bin/Debug/Xamarin.Android.Support.v7.AppCompat.dll
+/Users/tylerbaker/Projects/HelloWorld/HelloWorld/bin/Debug/RestSharp.dll

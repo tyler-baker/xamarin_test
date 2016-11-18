@@ -102,6 +102,7 @@ class MonoPackageManager_Resources {
 		"System.Runtime.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"RestSharp.dll",
 		"System.Threading.dll",
 		"System.Collections.dll",
 		"System.Collections.Concurrent.dll",

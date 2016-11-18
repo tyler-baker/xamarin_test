@@ -8,7 +8,7 @@ namespace HelloWorld
 	[Activity(Label = "HelloWorld", MainLauncher = true, Icon = "@mipmap/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		//int count = 1;
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -21,12 +21,17 @@ namespace HelloWorld
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
 
-			var client = new RestClient("http://www.thomas-bayer.com/sqlrest/CUSTOMER/");
+			string url = "http://www.thomas-bayer.com/sqlrest/CUSTOMER/";
+
+			var client = new RestClient(url);
+
 
 			var request = new RestRequest();
 			client.ExecuteAsync(request, response =>
 			{
-				button.Text = response.Content;
+				button.Click += delegate { button.Text = url; };
+				//Toast.MakeText(BaseContext, url, ToastLength.Long);
+				//button.Text = response.Content;
 			});
 
 			//button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
