@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using RestSharp;
 
 namespace HelloWorld
 {
@@ -20,18 +21,16 @@ namespace HelloWorld
 			// and attach an event to it
 			Button button = FindViewById<Button>(Resource.Id.myButton);
 
-			button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+			var client = new RestClient("http://www.thomas-bayer.com/sqlrest/CUSTOMER/");
 
-			button.Click += delegate {
-				if (count > 1)
-				{
-					
-					button.Visibility = Android.Views.ViewStates.Invisible;
+			var request = new RestRequest();
+			client.ExecuteAsync(request, response =>
+			{
+				button.Text = response.Content;
+			});
 
-					SystemClock.Sleep(2000);
-					button.Visibility = Android.Views.ViewStates.Visible;
-				}
-			};
+			//button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+
 		}
 	}
 }
