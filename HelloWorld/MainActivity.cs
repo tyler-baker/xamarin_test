@@ -29,7 +29,7 @@ namespace HelloWorld
 			var request = new RestRequest();
 			client.ExecuteAsync(request, response =>
 			{
-				button.Click += delegate { button.Text = url; };
+				button.Click += delegate { button.Text = response.Content; };
 				//Toast.MakeText(BaseContext, url, ToastLength.Long);
 				//button.Text = response.Content;
 			});
